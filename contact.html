@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap eCommerce Template</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<style>
+body .more {
+	float: right;
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 20px;
+	text-decoration: none;
+}
+.top {
+	background-color: #444;
+	height: 42px;
+	line-height: 42px;
+}
+.top a {
+	color: #fff;
+	cursor: pointer;
+	margin-right: 25px;
+	text-decoration: none;
+}
+.search {
+	background-color: #7c7c7c;
+	border-radius: 3px;
+	height: 26px;
+	margin-top: 8px;
+	padding: 4px 6px;
+	position: relative;
+	width: 210px;
+}
+.fr {
+	float: right;
+}
+.search input {
+	background-color: transparent;
+	border: 0 none;
+	color: #aaa;
+	font-size: 14px;
+	height: 18px;
+	line-height: 18px;
+	vertical-align: top;
+	width: 160px;
+}
+.search-icon {
+	color: #A5A5A5;
+	cursor: pointer;
+	display: inline-block;
+	height: 16px;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	width: 16px;
+}
+.navbar-brand {
+	float: left;
+	font-size: 18px;
+	height: 50px;
+	line-height: 20px;
+	padding: 5px;
+}
+.warp {
+	background-color: #f0f0f0;
+	padding:20px 0;
+}
+.sidebar {
+    
+    background-color: #fff;
+	border: solid 1px #e1e1e1;
+    box-shadow: 0 0 3px #eeeeee, inset 0 0 3px #ffffff;
+    border-radius: 4px;
+    
+    
+    
+    
+}
+.main {
+	    padding: 30px 32px;
+    margin-bottom: 10px;
+    border: solid 1px #e1e1e1;
+    box-shadow: 3px 3px 3px #e1e2e3, inset 0 0 3px #ffffff;
+    border-radius: 4px;
+	background-color:#FFFFFF;
+}
+.banner {
+    background: url(images/about.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="container"> <a onclick="lrModalShow('login')" href="javascript:;">登录</a> <a onclick="lrModalShow('register')" href="javascript:;">免费注册</a>
+    <div class="search fr">
+      <input type="search" placeholder="搜索课程或老师" value="" autocomplete="off">
+      <span class="glyphicon glyphicon-search search-icon"></span> </div>
+  </div>
+</div>
+<nav class="navbar navbar-default" style="background:#FFFFFF">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" height="40px"></a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1" >
+      <ul class="nav navbar-nav navbar-right ">
+        <li class="active"><a href="#">首页</a></li>
+        <li ><a href="#">关于我们</a></li>
+        <li ><a href="#">师资介绍</a></li>
+        <li ><a href="#">新闻专题</a></li>
+        <li ><a href="#">联系/合作</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="banner"></div>
+<div class="warp">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="nav nav-pills nav-stacked">
+            <li class=""><a href="about.html">关于我们</a> </li>
+            <li class=""><a href="partner.html">商务合作</a></li>
+            <li class="active"><a href="contact.html">联系我们</a></li>
+            <li class=""><a href="service.html">服务条款</a></li>
+            <li class=""><a href="feedback.html">意见反馈</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+      	<div class="main">
+        	<p>地址：上海徐汇区漕溪北路18号 上海实业大厦6楼H座(地铁1、9、11号线徐家汇站8号出口）</p>
+            <p>邮编：200040</p>
+            <p>总机：(86-021)4000082400</p>
+            <p>传真：(86-021)4000082400</p>
+            <p>邮箱：service@ignis-tech.cn</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section well">
+  <div class="container ">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+        <address>
+        <strong>MyStoreFront, Inc.</strong><br>
+        Indian Treasure Link<br>
+        Quitman, WA, 99110-0219<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+        <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">first.last@example.com</a>
+        </address>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

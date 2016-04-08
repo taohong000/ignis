@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap eCommerce Template</title>
+<!-- Bootstrap -->
+<!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+<link href="css/bootstrap-3.3.5.css" rel="stylesheet" type="text/css">
+<style>
+.more {
+	float: right;
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 20px;
+	text-decoration: none;
+}
+.top {
+	background-color: #444;
+	height: 42px;
+	line-height: 42px;
+}
+.top a {
+	color: #fff;
+	cursor: pointer;
+	margin-right: 25px;
+	text-decoration: none;
+}
+.search {
+	background-color: #7c7c7c;
+	border-radius: 3px;
+	height: 26px;
+	margin-top: 8px;
+	padding: 4px 6px;
+	position: relative;
+	width: 210px;
+}
+.fr {
+	float: right;
+}
+.search input {
+	background-color: transparent;
+	border: 0 none;
+	color: #aaa;
+	font-size: 14px;
+	height: 18px;
+	line-height: 18px;
+	vertical-align: top;
+	width: 160px;
+}
+.search-icon {
+	color: #A5A5A5;
+	cursor: pointer;
+	display: inline-block;
+	height: 16px;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	width: 16px;
+}
+.navbar-brand {
+	float: left;
+	font-size: 18px;
+	height: 50px;
+	line-height: 20px;
+	padding: 5px;
+}
+.warp {
+	background-color: #f0f0f0;
+	padding: 20px 0;
+}
+.filter {
+	border: solid 1px #e1e1e1;
+	box-shadow: 3px 3px 3px #e1e2e3, inset 0 0 3px #ffffff;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	margin-bottom: 20px;
+}
+.filter .row {
+	margin: 20px 0;
+}
+.fl-l {
+	float: left;
+}
+.fl-r {
+	float: right;
+}
+.main {
+	padding: 30px 32px 0;
+	margin-bottom: 10px;
+	border: solid 1px #e1e1e1;
+	box-shadow: 3px 3px 3px #e1e2e3, inset 0 0 3px #ffffff;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+}
+.team-li {
+	padding: 20px 0;
+	border-bottom: 1px #ddd solid;
+}
+.mar-l-15{
+	margin-left:15px;
+}
+.mar-r-15{
+	margin-right:15px;
+}
+</style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="top">
+  <div class="container"> <a onclick="lrModalShow('login')" href="javascript:;">登录</a> <a onclick="lrModalShow('register')" href="javascript:;">免费注册</a>
+    <div class="search fr">
+      <input type="search" placeholder="搜索课程或老师" value="" autocomplete="off">
+      <span class="glyphicon glyphicon-search search-icon"></span> </div>
+  </div>
+</div>
+<nav class="navbar navbar-default" style="background:#FFFFFF">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" height="40px"></a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1" >
+      <ul class="nav navbar-nav navbar-right ">
+        <li class="active"><a href="#">首页</a></li>
+        <li ><a href="#">关于我们</a></li>
+        <li ><a href="#">师资介绍</a></li>
+        <li ><a href="#">新闻专题</a></li>
+        <li ><a href="#">联系/合作</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="warp">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="#">首页</a></li>
+      <li class="active">师资介绍</li>
+    </ol>
+  </div>
+  <div class="container filter">
+    <div class="row ">
+      <div class=" fl-l  ">
+        <h4>教师类别：</h4>
+      </div>
+      <div class="col-lg-10">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">SVN</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">VB.Net</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">PHP</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="fl-l  ">
+        <h4>课程类别：</h4>
+      </div>
+      <div class="col-lg-10">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">SVN</a></li>
+          <li><a href="#">iOS</a></li>
+          <li><a href="#">VB.Net</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">PHP</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container main">
+  <div class="row">
+    <div class="col-lg-6"><ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#">默认</a></li>
+      <li role="presentation"><a href="#">人气<span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></li>
+      <li role="presentation"><a href="#">评价<span class="glyphicon glyphicon-sort-by-attributes-alt"></span></a></li>
+      <li role="presentation"><a href="#">价格<span class="glyphicon glyphicon-sort-by-attributes"></span></a></li>
+      <li class="mar-l-15 mar-r-15" >
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            男</label>
+        </div>
+      </li>
+      <li class="mar-l-15 mar-r-15">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            女</label>
+        </div>
+      </li>
+    </ul></div>
+    <div class="col-lg-6">
+      <nav class="text-right">
+        <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+        <ul class="pagination" style="margin:0">
+          <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+    <hr>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div  class="row">
+      <nav class=" text-right"> 
+        <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+        <ul class="pagination">
+          <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="section well">
+  <div class="container ">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+        <address>
+        <strong>MyStoreFront, Inc.</strong><br>
+        Indian Treasure Link<br>
+        Quitman, WA, 99110-0219<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+        <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">first.last@example.com</a>
+        </address>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!-- <script src="js/bootstrap.js"></script> --> 
+<script src="js/bootstrap-3.3.5.js" type="text/javascript"></script>
+</body>
+</html>

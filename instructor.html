@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap eCommerce Template</title>
+<!-- Bootstrap -->
+<!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+<link href="css/bootstrap-3.3.5.css" rel="stylesheet" type="text/css">
+<style>
+.more {
+	float: right;
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 20px;
+	text-decoration: none;
+}
+.top {
+	background-color: #444;
+	height: 42px;
+	line-height: 42px;
+}
+.top a {
+	color: #fff;
+	cursor: pointer;
+	margin-right: 25px;
+	text-decoration: none;
+}
+.search {
+	background-color: #7c7c7c;
+	border-radius: 3px;
+	height: 26px;
+	margin-top: 8px;
+	padding: 4px 6px;
+	position: relative;
+	width: 210px;
+}
+.fr {
+	float: right;
+}
+.search input {
+	background-color: transparent;
+	border: 0 none;
+	color: #aaa;
+	font-size: 14px;
+	height: 18px;
+	line-height: 18px;
+	vertical-align: top;
+	width: 160px;
+}
+.search-icon {
+	color: #A5A5A5;
+	cursor: pointer;
+	display: inline-block;
+	height: 16px;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	width: 16px;
+}
+.navbar-brand {
+	float: left;
+	font-size: 18px;
+	height: 50px;
+	line-height: 20px;
+	padding: 5px;
+}
+.warp {
+	background-color: #f0f0f0;
+	padding: 20px 0;
+}
+.filter {
+	border: solid 1px #e1e1e1;
+	box-shadow: 3px 3px 3px #e1e2e3, inset 0 0 3px #ffffff;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	margin-bottom: 20px;
+}
+.filter .row {
+	margin: 20px 0;
+}
+.fl-l {
+	float: left;
+}
+.fl-r {
+	float: right;
+}
+.main {
+	padding: 30px 32px 0;
+	margin-bottom: 10px;
+	border: solid 1px #e1e1e1;
+	box-shadow: 3px 3px 3px #e1e2e3, inset 0 0 3px #ffffff;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+}
+.team-li {
+	padding: 20px 0;
+	border-bottom: 1px #ddd solid;
+}
+.mar-l-15{
+	margin-left:15px;
+}
+.mar-r-15{
+	margin-right:15px;
+}
+.mar-t-20{
+	margin-top:20px
+}
+.pad-20{
+	padding:20px;
+}
+</style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="top">
+  <div class="container"> <a onclick="lrModalShow('login')" href="javascript:;">登录</a> <a onclick="lrModalShow('register')" href="javascript:;">免费注册</a>
+    <div class="search fr">
+      <input type="search" placeholder="搜索课程或老师" value="" autocomplete="off">
+      <span class="glyphicon glyphicon-search search-icon"></span> </div>
+  </div>
+</div>
+<nav class="navbar navbar-default" style="background:#FFFFFF">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" height="40px"></a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1" >
+      <ul class="nav navbar-nav navbar-right ">
+        <li class="active"><a href="#">首页</a></li>
+        <li ><a href="#">关于我们</a></li>
+        <li ><a href="#">师资介绍</a></li>
+        <li ><a href="#">新闻专题</a></li>
+        <li ><a href="#">联系/合作</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="warp">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+      <div class="media">
+    <div class="media-left">
+        <a href="#">
+        <img class="img-circle media-object" src="images/course-detail.jpg" height="100px" width="100px" alt="Placeholder image">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+    </div>
+</div></div>
+      
+    </div>
+  </div>
+
+
+  <div class="container main mar-t-20">
+
+      <div role="tabpanel">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#home1" data-toggle="tab" role="tab" aria-controls="tab1">老师简介</a></li>
+          <li role="presentation"><a href="#paneTwo1" data-toggle="tab" role="tab" aria-controls="tab2">课程</a></li>
+         
+        </ul>
+        <div id="tabContent1" class="tab-content" style="min-height:500px">
+          <div role="tabpanel" class="tab-pane fade in active pad-20" id="home1">
+            <p>Content in <b>Tab Panel 1</b></p>
+          </div>
+          <div role="tabpanel" class="tab-pane fade pad-20" id="paneTwo1">
+            <div class="row ">
+
+
+    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+      <div class="thumbnail"> <img src="images/400X200.gif" alt="Thumbnail Image 1" class="img-responsive">
+        <div class="caption">
+          <h3>Product</h3>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p><span style="margin-left: 0;color: #5FB41B;float: left;">免费</span><i style="float: left;margin: 4px 10px 0;display: inline-block;vertical-align: middle;width: 1px;height: 14px;background: #ddd;"></i></p>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+      <div class="thumbnail"> <img src="images/400X200.gif" alt="Thumbnail Image 1" class="img-responsive">
+        <div class="caption">
+          <h3>Product</h3>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p><span style="margin-left: 0;color: #5FB41B;float: left;">免费</span><i style="float: left;margin: 4px 10px 0;display: inline-block;vertical-align: middle;width: 1px;height: 14px;background: #ddd;"></i></p>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+          </div>
+          
+          
+        </div>
+
+  </div>
+  </div>
+  </div>
+<div class="section well">
+  <div class="container ">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+        <address>
+        <strong>MyStoreFront, Inc.</strong><br>
+        Indian Treasure Link<br>
+        Quitman, WA, 99110-0219<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+        <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">first.last@example.com</a>
+        </address>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!-- <script src="js/bootstrap.js"></script> --> 
+<script src="js/bootstrap-3.3.5.js" type="text/javascript"></script>
+</body>
+</html>

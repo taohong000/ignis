@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap eCommerce Template</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<style>
+body .more {
+	float: right;
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 20px;
+	text-decoration: none;
+}
+.top {
+	background-color: #444;
+	height: 42px;
+	line-height: 42px;
+}
+.top a {
+	color: #fff;
+	cursor: pointer;
+	margin-right: 25px;
+	text-decoration: none;
+}
+.search {
+	background-color: #7c7c7c;
+	border-radius: 3px;
+	height: 26px;
+	margin-top: 8px;
+	padding: 4px 6px;
+	position: relative;
+	width: 210px;
+}
+.fr {
+	float: right;
+}
+.search input {
+	background-color: transparent;
+	border: 0 none;
+	color: #aaa;
+	font-size: 14px;
+	height: 18px;
+	line-height: 18px;
+	vertical-align: top;
+	width: 160px;
+}
+.search-icon {
+	color: #A5A5A5;
+	cursor: pointer;
+	display: inline-block;
+	height: 16px;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	width: 16px;
+}
+.navbar-brand {
+	float: left;
+	font-size: 18px;
+	height: 50px;
+	line-height: 20px;
+	padding: 5px;
+}
+.warp {
+	background-color: #f0f0f0;
+	padding:20px 0;
+}
+.sidebar {
+    
+    background-color: #fff;
+	border: solid 1px #e1e1e1;
+    box-shadow: 0 0 3px #eeeeee, inset 0 0 3px #ffffff;
+    border-radius: 4px;
+    
+    
+    
+    
+}
+.main {
+	    padding: 30px 32px;
+    margin-bottom: 10px;
+    border: solid 1px #e1e1e1;
+    box-shadow: 3px 3px 3px #e1e2e3, inset 0 0 3px #ffffff;
+    border-radius: 4px;
+	background-color:#FFFFFF;
+}
+.banner {
+    background: url(images/about.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="container"> <a onclick="lrModalShow('login')" href="javascript:;">登录</a> <a onclick="lrModalShow('register')" href="javascript:;">免费注册</a>
+    <div class="search fr">
+      <input type="search" placeholder="搜索课程或老师" value="" autocomplete="off">
+      <span class="glyphicon glyphicon-search search-icon"></span> </div>
+  </div>
+</div>
+<nav class="navbar navbar-default" style="background:#FFFFFF">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" height="40px"></a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1" >
+      <ul class="nav navbar-nav navbar-right ">
+        <li class="active"><a href="#">首页</a></li>
+        <li ><a href="#">关于我们</a></li>
+        <li ><a href="#">师资介绍</a></li>
+        <li ><a href="#">新闻专题</a></li>
+        <li ><a href="#">联系/合作</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="banner"></div>
+<div class="warp">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar">
+          <ul class="nav nav-pills nav-stacked">
+            <li class=""><a href="about.html">关于我们</a> </li>
+            <li class=""><a href="partner.html">商务合作</a></li>
+            <li class=""><a href="contact.html">联系我们</a></li>
+            <li class="active"><a href="service.html">服务条款</a></li>
+            <li class=""><a href="feedback.html">意见反馈</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+      	<div class="main">
+        	<h3>总则</h3>
+            <p>用户在接受宜格思（http://www.ignis-tech.cn/）服务之前，请务必仔细阅读本条款并同意本声明。 用户直接或通过各类方式（如站外API引用等）间接使用宜格思服务和数据的行为，都将被视作已无条件接受本声明所涉全部内容；若用户对本声明的任何条款有异议，请停止使用宜格思所提供的全部服务。</p>
+            <h4>第一条</h4>
+            <p>
+            	用户以各种方式使用宜格思服务和数据（包括但不限于发表、宣传介绍、转载、浏览及利用宜格思或宜格思用户发布内容）的过程中，不得以任何方式利用宜格思直接或间接从事违反中国法律法规，以及社会公德的行为。
+            	用户应当恪守下述承诺：<br>
+            	1. 发布、转载或提供的内容符合中国法律法规、社会公德；<br>
+            	2. 不得干扰、损害和侵犯宜格思的各种合法权利与利益；<br>
+            	3. 不得干扰、损害和侵犯其他宜格思用户的各种合法权利与利益；<br>
+            	4. 遵守宜格思以及与之相关的网络服务的协议、指导原则、管理细则等。
+            </p>
+            <p>宜格思有权对违反上述承诺的内容予以删除。</p>
+            <h4>第二条</h4>
+            <p>1. 宜格思仅为用户发布的内容提供存储空间，宜格思不对用户发表、转载的内容提供任何形式的保证：不保证内容满足您的要求，不保证宜格思的服务不会中断。因网络状况、通讯线路、第三方网站或管理部门的要求等任何原因而导致您不能正常使用顺顺，宜格思不承担任何法律责任。<br>2. 用户在宜格思发表的内容（包含但不限于宜格思目前各产品功能里的内容）仅表明其个人的立场和观点，并不代表宜格思的立场或观点。作为内容的发表者，需自行对所发表内容负责，因所发表内容引发的一切纠纷，由该内容的发表者承担全部法律及连带责任。宜格思不承担任何法律及连带责任。<br>3. 用户在宜格思发布涉嫌侵犯他人知识产权或其他合法权益的内容，经相关方提供初步证据，宜格思有权先行予以删除，并保留移交司法机关查处的权利。宜格思有权参照有关司法机关的处理结果对网站发布内容作出处置。<br>4. 个人或单位如认为宜格思上存在侵犯自身合法权益的内容，应准备好具有法律效力的证明材料，及时与宜格思取得联系，以便宜格思迅速做出处理。</p>
+            <h3>附则</h3>
+            <p>对免责声明的解释、修改及更新权均属于宜格思所有。</p>
+			<p>联系我们：<a href="mailto:service@ignis-tech.cn">service@ignis-tech.cn</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section well">
+  <div class="container ">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+        <address>
+        <strong>MyStoreFront, Inc.</strong><br>
+        Indian Treasure Link<br>
+        Quitman, WA, 99110-0219<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+        <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">first.last@example.com</a>
+        </address>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
