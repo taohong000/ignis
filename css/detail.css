@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+.count {
+	background-color: #fbfbfb;
+	border: 1px solid #ddd;
+	color: #666;
+	padding: 8px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+.count span {
+	display: inline-block;
+	border-right: 1px solid #ddd;
+	height: 42px;
+	line-height: 21px;
+	width: 32%;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden;
+}
+.count em {
+	color: #c10000;
+	font-style: normal;
+	font-size: 16px;
+}
+.count span.last {
+	border-right: 0;
+}
+.comments-hd {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+}
+.comments-hd .score {
+	color: #666;
+}
+.comments-hd .score span {
+	color: #999;
+	margin: 0 15px;
+}
+.comments-filters {
+	background-color: #f9f9f9;
+	border: 1px solid #eee;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 20px;
+}
+.comments-filters label {
+	margin-right: 15px;
+}
+.comments-filters input[type=radio] {
+	margin-right: 5px;
+	margin-top: -2px;
+	vertical-align: middle;
+}
+.add-comments .add-comments-hd {
+	background-color: #f0f0f0;
+	font-size: 14px;
+	line-height: 30px;
+	margin-bottom: 15px;
+	padding: 0 15px;
+}
+.cr-box {
+   
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+
+}
