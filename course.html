@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ignis</title>
+<!-- Bootstrap -->
+<!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+<link href="css/bootstrap-3.3.5.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/team.css" />
+<style>
+
+
+
+</style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="top">
+  <div class="container"> <a onclick="lrModalShow('login')" href="javascript:;">登录</a> <a onclick="lrModalShow('register')" href="javascript:;">免费注册</a>
+    <div class="search fr">
+      <input type="search" placeholder="搜索课程或老师" value="" autocomplete="off">
+      <span class="glyphicon glyphicon-search search-icon"></span> </div>
+  </div>
+</div>
+<header class="clearfix" style="border-bottom:1px #e7e7e7 solid">
+  <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left; margin-left:15px"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+  <span class="glyphicon glyphicon-search visible-xs pull-right " style="font-size:30px; color:#888; margin:8px 15px"></span> <a class=" visible-xs center-block" href="index.html"><img src="images/logo.png" class="center-block" alt="" height="40px" style="margin-top:4px"></a>
+  <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="js-bootstrap-offcanvas" style="background-color:#FFFFFF">
+    <div class="container">
+      <div class="navbar-header"> <a class="navbar-brand hidden-xs" href="index.html"><img src="images/logo.png" class="center-block" alt="" height="40px"></a> </div>
+      <div>
+        <ul class="nav navbar-nav navbar-right ">
+          <li ><a href="index.html">首页</a></li>
+          <li ><a href="about.html">关于我们</a></li>
+          <li class="active"><a href="team.html">师资介绍</a></li>
+          <li ><a href="news.html">新闻专题</a></li>
+          <li ><a href="volumteer.html">联系/合作</a></li>
+        </ul>
+        <div class=" nav navbar-nav navbar-right  visible-xs">
+          <hr>
+          <div class="">
+            <button type="button" class="btn btn-primary center-block">登录 | 注册</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="warp">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="index.html">首页</a></li>
+      <li class="active">课程分类</li>
+    </ol>
+  </div>
+  <div class="container filter">
+
+    <div class="row ">
+      <div class="pull-left  ">
+        <h4>课程类别：</h4>
+      </div>
+      <div class="col-lg-10">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">全部</a></li>
+          <li><a href="#">文学</a></li>
+          <li><a href="#">青少年英语</a></li>
+          <li><a href="#">IELTS</a></li>
+          <li><a href="#"> TOEFL</a></li>
+          <li><a href="#"> SAT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container main">
+  <div class="row">
+    <div class="col-lg-6"><ul class="nav nav-pills">
+      
+      <li class="mar-l-15 mar-r-15" >
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="" checked>
+            全部</label>
+        </div>
+      </li>
+      <li class="mar-l-15 mar-r-15">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            免费</label>
+        </div>
+      </li>
+      <li class="mar-l-15 mar-r-15" >
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="">
+            收费</label>
+        </div>
+      </li>
+    </ul></div>
+    <div class="col-lg-6">
+      <nav class="text-right">
+        <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+        <ul class="pagination" style="margin:0">
+          <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+    <hr>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="detail.html"> <img class="media-object" src="images/course1.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="detail.html"><h4 class="media-heading">青少年英语：高阶</h4></a>
+            课程介绍：本课程包含青少年英语 Level 10 ~ Level 12，适用于有一定英语基础的学生。学生在接受过我们的测试之后，我们会帮学生选取合适的等级。本课程的授课团队由教学经验丰富的美籍老师以及口语地道的中美志愿者（留学生）组成，利用美国先进的网络会议系统，进行英语（主要是口语）的实时授课，让偏远地区的 ...... </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="text-right text-danger">免费</h3>
+        <div class="text-right">
+          <div class="btn-group" role="group" aria-label="...">
+  <a href="detail.html" type="button" class="btn btn-default">查看</a>
+  <a type="button" class="btn  btn-primary">预约</a>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div  class="row">
+      <nav class=" text-right"> 
+        <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+        <ul class="pagination">
+          <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="section well">
+  <div class="container ">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xs-6">
+            <div>
+              <dl>
+                <dt>Description 1</dt>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+                <dd><a>Link anchor</a> </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+        <address>
+        <strong>MyStoreFront, Inc.</strong><br>
+        Indian Treasure Link<br>
+        Quitman, WA, 99110-0219<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+        <address>
+        <strong>Full Name</strong><br>
+        <a href="mailto:#">first.last@example.com</a>
+        </address>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!-- <script src="js/bootstrap.js"></script> --> 
+<script src="js/bootstrap-3.3.5.js" type="text/javascript"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap eCommerce Template</title>
+<title>ignis</title>
 <!-- Bootstrap -->
 <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
 <link href="css/bootstrap-3.3.5.css" rel="stylesheet" type="text/css">
@@ -30,30 +30,34 @@
       <span class="glyphicon glyphicon-search search-icon"></span> </div>
   </div>
 </div>
-<nav class="navbar navbar-default" style="background:#FFFFFF">
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" height="40px"></a></div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="defaultNavbar1" >
-      <ul class="nav navbar-nav navbar-right ">
-        <li class="active"><a href="#">首页</a></li>
-        <li ><a href="#">关于我们</a></li>
-        <li ><a href="#">师资介绍</a></li>
-        <li ><a href="#">新闻专题</a></li>
-        <li ><a href="#">联系/合作</a></li>
-      </ul>
+<header class="clearfix" style="border-bottom:1px #e7e7e7 solid">
+  <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas" style="float:left; margin-left:15px"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+  <span class="glyphicon glyphicon-search visible-xs pull-right " style="font-size:30px; color:#888; margin:8px 15px"></span> <a class=" visible-xs center-block" href="index.html"><img src="images/logo.png" class="center-block" alt="" height="40px" style="margin-top:4px"></a>
+  <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="js-bootstrap-offcanvas" style="background-color:#FFFFFF">
+    <div class="container">
+      <div class="navbar-header"> <a class="navbar-brand hidden-xs" href="index.html"><img src="images/logo.png" class="center-block" alt="" height="40px"></a> </div>
+      <div>
+        <ul class="nav navbar-nav navbar-right ">
+          <li ><a href="index.html">首页</a></li>
+          <li ><a href="about.html">关于我们</a></li>
+          <li class="active"><a href="team.html">师资介绍</a></li>
+          <li ><a href="news.html">新闻专题</a></li>
+          <li ><a href="volumteer.html">联系/合作</a></li>
+        </ul>
+        <div class=" nav navbar-nav navbar-right  visible-xs">
+          <hr>
+          <div class="">
+            <button type="button" class="btn btn-primary center-block">登录 | 注册</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
+  </nav>
+</header>
 <div class="warp">
   <div class="container">
     <ol class="breadcrumb">
-      <li><a href="#">首页</a></li>
+      <li><a href="index.html">首页</a></li>
       <li class="active">师资介绍</li>
     </ol>
   </div>
@@ -64,12 +68,9 @@
       </div>
       <div class="col-lg-10">
         <ul class="nav nav-pills">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">SVN</a></li>
-          <li><a href="#">iOS</a></li>
-          <li><a href="#">VB.Net</a></li>
-          <li><a href="#">Java</a></li>
-          <li><a href="#">PHP</a></li>
+          <li class="active"><a href="#">全部</a></li>
+          <li><a href="#">志愿者团队</a></li>
+          <li><a href="#">外籍教师</a></li>
         </ul>
       </div>
     </div>
@@ -79,12 +80,12 @@
       </div>
       <div class="col-lg-10">
         <ul class="nav nav-pills">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">SVN</a></li>
-          <li><a href="#">iOS</a></li>
-          <li><a href="#">VB.Net</a></li>
-          <li><a href="#">Java</a></li>
-          <li><a href="#">PHP</a></li>
+          <li class="active"><a href="#">全部</a></li>
+          <li><a href="#">文学</a></li>
+          <li><a href="#">青少年英语</a></li>
+          <li><a href="#">IELTS</a></li>
+          <li><a href="#"> TOEFL</a></li>
+          <li><a href="#"> SAT</a></li>
         </ul>
       </div>
     </div>
@@ -131,9 +132,9 @@
     <div class="row team-li">
       <div class="col-lg-8">
         <div class="media">
-          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
         </div>
       </div>
@@ -145,9 +146,9 @@
     <div class="row team-li">
       <div class="col-lg-8">
         <div class="media">
-          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
         </div>
       </div>
@@ -159,9 +160,9 @@
     <div class="row team-li">
       <div class="col-lg-8">
         <div class="media">
-          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
         </div>
       </div>
@@ -173,9 +174,9 @@
     <div class="row team-li">
       <div class="col-lg-8">
         <div class="media">
-          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
         </div>
       </div>
@@ -187,9 +188,9 @@
     <div class="row team-li">
       <div class="col-lg-8">
         <div class="media">
-          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
         </div>
       </div>
@@ -201,9 +202,9 @@
     <div class="row team-li">
       <div class="col-lg-8">
         <div class="media">
-          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
         </div>
       </div>
@@ -215,9 +216,9 @@
     <div class="row team-li">
       <div class="col-lg-8">
         <div class="media">
-          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
         </div>
       </div>
@@ -229,9 +230,9 @@
     <div class="row team-li">
       <div class="col-lg-8">
         <div class="media">
-          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
         </div>
       </div>
@@ -243,9 +244,23 @@
     <div class="row team-li">
       <div class="col-lg-8">
         <div class="media">
-          <div class="media-left"> <a href="#"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-right">教师认证</div>
+        <div class="text-right">身份认证</div>
+      </div>
+    </div>
+    <div class="row team-li">
+      <div class="col-lg-8">
+        <div class="media">
+          <div class="media-left"> <a href="instructor.html"> <img class="media-object" src="images/avatar.jpg" alt="..."> </a> </div>
+          <div class="media-body">
+            <a href="instructor.html"><h4 class="media-heading">Liane Zalewski</h4></a>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
         </div>
       </div>
